@@ -17,15 +17,19 @@ Output 2:
 #include <stdio.h>
 
 int main(){
-    int i,n,sum=0;
+    int i,n,sum=0,c=0;
 
     printf("Enter a number: ");
     scanf("%d",&n);
 
-    for(i=1;i<=n;i++){
+    for(i=1;c<+n;i++){
         if(i%2!=0){
+            c++;
             sum += i;
         }
     }
     printf("The sum of the first %d odd numbers is: %d",n,sum);
 }
+
+// edited the code as there was a logical error in my code, where I printed 
+// the sum of all odd numbers up to 'n', instead of printing the sum of the first 'n' odd numbers 
